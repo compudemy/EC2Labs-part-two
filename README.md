@@ -56,4 +56,11 @@ Now select “ssh” > “Auth” and browse for your .ppk file.
 
 3. Click on open and select yes to connect to your instance.
 
+![image](https://user-images.githubusercontent.com/103466963/174652298-b3786885-5060-4453-a1ac-05fdf77265a3.png)
 
+Run commands on your Linux instance at launch
+When you launch an instance in Amazon EC2, you have the option of passing user data to the instance that can be used to perform common automated configuration tasks and even run scripts after the instance starts. You can pass two types of user data to Amazon EC2: shell scripts and cloud-init directives. You can also pass this data into the launch wizard as plain text, as a file (this is useful for launching instances using the command line tools), or as base64-encoded text (for API calls).
+
+It has a prerequisite that your instance should have a public DNS name that is reachable from the internet. You must also configure your security group to allow SSH (port 22), HTTP (port 80), and HTTPS (port 443) connections.
+
+You can specify instance user data when you launch the instance. If the root volume of the instance is an EBS volume, you can also stop the instance and update its user data.
