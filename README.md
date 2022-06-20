@@ -38,6 +38,7 @@ An AMI is a template that contains the software configuration (operating system,
 
 A key pair consists of a public key that AWS stores, and a private key file that you store. Together, they allow you to connect to your instance securely. For Windows AMIs, the private key file is required to obtain the password used to log into your instance. For Linux AMIs, the private key file allows you to securely SSH into your instance.
 
+![image](https://user-images.githubusercontent.com/103466963/174650142-a121f790-1144-475a-bc19-a2df4a7fdedb.png)
 
 
 
