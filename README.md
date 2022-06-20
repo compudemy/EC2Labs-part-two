@@ -21,12 +21,16 @@ An AMI is a template that contains the software configuration (operating system,
 
 4. In this step we will choose required storage capacity as well type of volumes. In general Linux machine’s Root volume will be “/dev/xvda” and for Windows it will be “/dev/sda”. We can add additional storage if required as well as encryption for the data.
 
+![image](https://user-images.githubusercontent.com/103466963/174649820-dec83986-2fda-47b7-a4be-1b52b214a7c8.png)
+
+
 5. Add Tags as per the standards followed. A tag consists of a case-sensitive key-value pair. These are very useful when you are defining any API function based on Tags.
+![image](https://user-images.githubusercontent.com/103466963/174649652-f50528f6-2d36-45cb-9bf7-6a5386a1eaf2.png)
 
 
 6. A security group is a set of firewall rules that control the traffic for your instance. On this page, you can add rules to allow specific traffic to reach your instance. You can choose existing Security Group or can define your own. We are going with default here as port 22 is allowed from internet and this is sufficient for connecting to this machine.
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/103466963/174649752-258856bc-6c0d-47c3-805c-abe1d6fada5f.png)
 
 
 
