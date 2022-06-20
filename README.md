@@ -18,6 +18,8 @@ An AMI is a template that contains the software configuration (operating system,
 
 3. This step allows you to configure your instance details such as VPC, Subnet, Public IP, IAM role and few other pre defined parameters. Here, we are launching 1 t2.micro instance into default VPC and Public Subnet. (We will be discussing in details regarding VPC in our coming blogs).
 
+![image](https://user-images.githubusercontent.com/103466963/174650024-fecebc6b-01f5-4a7e-b31d-f3c0a3bee361.png)
+
 
 4. In this step we will choose required storage capacity as well type of volumes. In general Linux machine’s Root volume will be “/dev/xvda” and for Windows it will be “/dev/sda”. We can add additional storage if required as well as encryption for the data.
 
@@ -31,6 +33,10 @@ An AMI is a template that contains the software configuration (operating system,
 6. A security group is a set of firewall rules that control the traffic for your instance. On this page, you can add rules to allow specific traffic to reach your instance. You can choose existing Security Group or can define your own. We are going with default here as port 22 is allowed from internet and this is sufficient for connecting to this machine.
 
 ![image](https://user-images.githubusercontent.com/103466963/174649752-258856bc-6c0d-47c3-805c-abe1d6fada5f.png)
+
+7. In this step we will verify all parameters and choose the key pair to connect to this instance.
+
+A key pair consists of a public key that AWS stores, and a private key file that you store. Together, they allow you to connect to your instance securely. For Windows AMIs, the private key file is required to obtain the password used to log into your instance. For Linux AMIs, the private key file allows you to securely SSH into your instance.
 
 
 
