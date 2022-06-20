@@ -40,7 +40,20 @@ A key pair consists of a public key that AWS stores, and a private key file that
 
 ![image](https://user-images.githubusercontent.com/103466963/174650142-a121f790-1144-475a-bc19-a2df4a7fdedb.png)
 
+8. Once clicked on launch, your instance will be launched in less than one minute and ready to connect.
 
+How to convert .pem ssh key to .ppk format?
+When you create a key pair in the final stage of launching instance the key will be created as .pem file and you need to convert it to .ppk file inorder to connect your instance.
+Click on Load and locate your .pem file once you select it key will be imported and click on Save private key which will be now converted to .ppk format which you need to use to connect with instance.
 
+![image](https://user-images.githubusercontent.com/103466963/174651978-c56005c3-8d64-47a9-bab0-0d162a8da68b.png)
+
+How to connect to aninstance using putty and .ppk file?
+Launch a putty session and enter username and public IP of the instance. By default username would be “ec2-user” for example ec2-user@publicip.
+Now select “ssh” > “Auth” and browse for your .ppk file.
+
+![image](https://user-images.githubusercontent.com/103466963/174652102-6212ddfa-266f-471b-97b1-1292cb3a990e.png)
+
+3. Click on open and select yes to connect to your instance.
 
 
