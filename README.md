@@ -42,15 +42,15 @@ A key pair consists of a public key that AWS stores, and a private key file that
 
 8. Once clicked on launch, your instance will be launched in less than one minute and ready to connect.
 
-How to convert .pem ssh key to .ppk format?
+# How to convert .pem ssh key to .ppk format.
 When you create a key pair in the final stage of launching instance the key will be created as .pem file and you need to convert it to .ppk file inorder to connect your instance.
 Click on Load and locate your .pem file once you select it key will be imported and click on Save private key which will be now converted to .ppk format which you need to use to connect with instance.
 
 ![image](https://user-images.githubusercontent.com/103466963/174651978-c56005c3-8d64-47a9-bab0-0d162a8da68b.png)
 
-# How to connect to aninstance using putty and .ppk file.
-Launch a putty session and enter username and public IP of the instance. By default username would be “ec2-user” for example ec2-user@publicip.
-Now select “ssh” > “Auth” and browse for your .ppk file.
+# How to connect to an instance using putty and .ppk file.
+1. Launch a putty session and enter username and public IP of the instance. By default username would be “ec2-user” for example ec2-user@publicip.
+2. Now select “ssh” > “Auth” and browse for your .ppk file.
 
 ![image](https://user-images.githubusercontent.com/103466963/174652102-6212ddfa-266f-471b-97b1-1292cb3a990e.png)
 
@@ -58,7 +58,7 @@ Now select “ssh” > “Auth” and browse for your .ppk file.
 
 ![image](https://user-images.githubusercontent.com/103466963/174652298-b3786885-5060-4453-a1ac-05fdf77265a3.png)
 
-Run commands on your Linux instance at launch
+# Run commands on your Linux instance at launch
 When you launch an instance in Amazon EC2, you have the option of passing user data to the instance that can be used to perform common automated configuration tasks and even run scripts after the instance starts. You can pass two types of user data to Amazon EC2: shell scripts and cloud-init directives. You can also pass this data into the launch wizard as plain text, as a file (this is useful for launching instances using the command line tools), or as base64-encoded text (for API calls).
 
 It has a prerequisite that your instance should have a public DNS name that is reachable from the internet. You must also configure your security group to allow SSH (port 22), HTTP (port 80), and HTTPS (port 443) connections.
