@@ -48,7 +48,7 @@ Click on Load and locate your .pem file once you select it key will be imported 
 
 ![image](https://user-images.githubusercontent.com/103466963/174651978-c56005c3-8d64-47a9-bab0-0d162a8da68b.png)
 
-How to connect to aninstance using putty and .ppk file?
+# How to connect to aninstance using putty and .ppk file.
 Launch a putty session and enter username and public IP of the instance. By default username would be “ec2-user” for example ec2-user@publicip.
 Now select “ssh” > “Auth” and browse for your .ppk file.
 
